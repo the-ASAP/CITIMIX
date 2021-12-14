@@ -1,4 +1,11 @@
 @import './rootStyles/main.scss';
+@import './components/header.scss';
+@import './components/main-menu.scss';
+@import './components/common/button.scss';
+@import './components/common/breadcrumbs.scss';
+@import './components/customer.scss';
+@import './components/customer-menu.scss';
+
 
 body {
   color: red;

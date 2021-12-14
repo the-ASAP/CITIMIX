@@ -1,0 +1,19 @@
+@import "../rootStyles/variables.scss";
+
+.customer {
+    padding-top: 37px;
+    
+    &__header {
+        margin: 0;
+        padding: 0;
+        margin-top: 37px;
+        color: $text-color;
+        text-transform: uppercase;
+        font-family: "Room";
+        font-weight: 700;
+        font-size: 64px;
+        text-align-last: left;
+    }
+
+    
+}

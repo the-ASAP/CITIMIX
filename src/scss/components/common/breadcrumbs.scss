@@ -1,0 +1,31 @@
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    
+
+    &__item {
+        margin-right: 14px;
+        position: relative;
+        & a {
+            text-decoration: none;
+            color: #6BB0D3;
+            font-weight: normal;
+        }
+
+        &--active a {
+            font-weight: 700;
+        }
+
+        &::after {
+            position: absolute;
+            font-size: 25px;
+            content: ".";
+            right: -10px;
+            top: -12px;
+            color: #6BB0D3;
+        }
+    }
+}

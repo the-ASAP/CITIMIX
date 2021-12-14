@@ -1,0 +1,61 @@
+@import "../rootStyles/variables.scss";
+
+._container {
+    width: 1480px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: $background-menu-color;
+    border-radius: 0rem 0rem 2.5rem 2.5rem;
+    min-height: 9.4375rem;
+
+    &__wrapper {
+        width: 104.3125rem;
+        min-height: 6.3125rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+
+
+    &__logo {
+        min-width: 7.9375rem;
+        height: 6rem;
+    }
+
+    &__menu {
+        margin-left: 10.9375rem;
+        margin-top: 3.375rem;
+    }
+    
+    &__icons {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 6.3125rem;
+        margin-top: 3.4375rem;
+        min-width: 7.6875rem;
+    }
+
+    &__icon {
+        cursor: pointer;
+        &:hover {
+            &:hover {
+                opacity: 0.1;
+            }
+        }
+    }
+
+
+    &__button-wrapper {
+        min-width: 12.9375rem;
+        margin-left: 5.6875rem;
+        margin-top: 2.1875rem;
+    }
+}
