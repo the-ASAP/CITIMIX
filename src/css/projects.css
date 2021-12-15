@@ -132,6 +132,198 @@ button {
     width: 90%;
   }
 }
+.header {
+  background-color: #F5FBFE;
+  border-radius: 0rem 0rem 2.5rem 2.5rem;
+  min-height: 9.4375rem;
+}
+.header__wrapper {
+  width: 104.3125rem;
+  min-height: 6.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 auto;
+}
+.header__logo {
+  min-width: 7.9019rem;
+  height: 6.16rem;
+}
+.header__menu {
+  margin-left: 11.0363rem;
+  margin-top: 3.375rem;
+}
+.header__icons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 6.3125rem;
+  margin-top: 3.4375rem;
+  min-width: 123px;
+}
+.header__icon {
+  cursor: pointer;
+}
+.header__icon:hover:hover {
+  opacity: 0.5;
+}
+.header__button-wrapper {
+  min-width: 12.9375rem;
+  margin-left: 5.6875rem;
+  margin-top: 2.1875rem;
+}
+.main-menu {
+  min-width: 53.0625rem;
+}
+.main-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-menu__item a {
+  text-decoration: none;
+  color: #002C3E;
+  font-size: 1.25rem;
+  line-height: 1.8125rem;
+}
+.main-menu__item a:hover {
+  color: #095371;
+}
+.button {
+  border: none;
+  color: #fff;
+  background-color: #F15A22;
+  border-radius: 1.25rem;
+  padding: 1.4375rem 2.8125rem;
+  font-size: 1rem;
+  line-height: 130%;
+  font-family: "Montserrat";
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.button:hover {
+  background-color: #d86b44;
+}
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.breadcrumbs__item {
+  margin-right: 0.875rem;
+  position: relative;
+}
+.breadcrumbs__item a {
+  text-decoration: none;
+  color: #6BB0D3;
+  font-weight: normal;
+}
+.breadcrumbs__item--active a {
+  font-weight: 700;
+}
+.breadcrumbs__item::after {
+  position: absolute;
+  font-size: 1.5625rem;
+  content: ".";
+  right: -0.625rem;
+  top: -0.75rem;
+  color: #6BB0D3;
+}
+.breadcrumbs__item:last-child {
+  margin-right: 0;
+}
+.customer {
+  padding-top: 37px;
+}
+.customer__header {
+  margin: 0;
+  padding: 0;
+  margin-top: 37px;
+  color: #002C3E;
+  text-transform: uppercase;
+  font-family: "Room";
+  font-weight: 700;
+  font-size: 64px;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+.customer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 131px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+.customer-menu__link {
+  color: #002C3E;
+  text-decoration: none;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.customer-menu__link:hover {
+  color: #00AAE7;
+}
+.customer-menu__link:hover .customer-menu__item-image path {
+  fill: #00AAE7;
+}
+.customer-menu__item-text {
+  display: block;
+  margin-left: 23px;
+}
+.customer-menu__item-image path {
+  fill: #002C3E;
+}
+._container {
+  width: 92.5rem;
+  padding: 0 0.625rem;
+  margin: 0 auto;
+  border: 1px solid red;
+}
 body {
   color: red;
 }

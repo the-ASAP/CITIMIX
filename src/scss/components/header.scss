@@ -1,11 +1,5 @@
 @import "../rootStyles/variables.scss";
 
-._container {
-    width: 1480px;
-    padding: 0 10px;
-    margin: 0 auto;
-}
-
 .header {
     background-color: $background-menu-color;
     border-radius: 0rem 0rem 2.5rem 2.5rem;
@@ -20,14 +14,13 @@
         margin: 0 auto;
     }
 
-
     &__logo {
-        min-width: 7.9375rem;
-        height: 6rem;
+        min-width: 7.9019rem;
+        height: 6.16rem;
     }
 
     &__menu {
-        margin-left: 10.9375rem;
+        margin-left: 11.0363rem;
         margin-top: 3.375rem;
     }
     
@@ -40,18 +33,17 @@
         justify-content: space-between;
         margin-left: 6.3125rem;
         margin-top: 3.4375rem;
-        min-width: 7.6875rem;
+        min-width: 123px;
     }
 
     &__icon {
         cursor: pointer;
         &:hover {
             &:hover {
-                opacity: 0.1;
+                opacity: 0.5;
             }
         }
     }
-
 
     &__button-wrapper {
         min-width: 12.9375rem;
