@@ -1,53 +1,89 @@
 @import "../rootStyles/variables.scss";
 
+
 .header {
     background-color: $background-menu-color;
     border-radius: 0rem 0rem 2.5rem 2.5rem;
     min-height: 9.4375rem;
-
-    &__wrapper {
-        width: 104.3125rem;
-        min-height: 6.3125rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin: 0 auto;
-    }
+    
 
     &__logo {
-        min-width: 7.9019rem;
+        width: 7.9019rem;
         height: 6.16rem;
     }
 
-    &__menu {
-        margin-left: 11.0363rem;
-        margin-top: 3.375rem;
+    &__wrapper {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
+
     
-    &__icons {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+
+    &__menu-wrapper {
+        width: 91.25rem;
+        display: flex;
+        align-items: center;
+        margin-top: 2.125rem;
+        @media (max-width: 1770px) {
+            width: 81rem;
+        }
+        @media (max-width: 1368px) {
+            width: 80rem;
+        }
+    }
+
+    &__menu {
+        width: 53.0625rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: 6.3125rem;
-        margin-top: 3.4375rem;
-        min-width: 123px;
+        @media (max-width: 1770px) {
+            width: 45rem;
+        }
+    }
+    
+    &__icons {
+        margin-left: 10.6875rem;
+        display: flex;
+        justify-content: space-between;
+        width: 7.6875rem;
+    }
+
+    &__link {
+        font-family: "Circe";
+        font-weight: bold;
+        font-size: 1.25rem;
+        color: $text-color;
+        line-height: 1.45;
+        font-weight: 700;
     }
 
     &__icon {
         cursor: pointer;
         &:hover {
-            &:hover {
-                opacity: 0.5;
-            }
+            opacity: 0.5;
         }
+        
     }
 
-    &__button-wrapper {
-        min-width: 12.9375rem;
-        margin-left: 5.6875rem;
-        margin-top: 2.1875rem;
+    &__button {  
+        margin-left: auto;
+        margin-right: 0.625rem;
+        border: none;
+        color: #fff;
+        background-color: $button-phone-color;
+        border-radius: 1.25rem;
+        padding: 1.4375rem 2.8125rem;
+        font-size: 1rem;
+        line-height: 130%;
+        font-family: "Montserrat";
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        &:hover {
+            background-color: $button-phone-color-hover;
+        }
+
     }
 }

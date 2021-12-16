@@ -9,13 +9,13 @@
     &__item {
         margin-right: 0.875rem;
         position: relative;
-        & a {
-            text-decoration: none;
-            color: #6BB0D3;
-            font-weight: normal;
-        }
+        font-family: 'Circe';
+        font-size: 0.875rem;
+        text-decoration: none;
+        color: #6BB0D3;
+        font-weight: normal;
 
-        &--active a {
+        &:hover {
             font-weight: 700;
         }
 
@@ -24,8 +24,12 @@
             font-size: 1.5625rem;
             content: ".";
             right: -0.625rem;
-            top: -0.75rem;
+            top: -0.8125rem;
             color: #6BB0D3;
+        }
+
+        &:last-child::after {
+            display: none;
         }
 
         &:last-child {
