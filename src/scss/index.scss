@@ -1,5 +1,14 @@
 @import './rootStyles/main.scss';
+@import './rootStyles/fonts.scss';
+@import './rootStyles/media.scss';
+
+@import './components/header.scss';
+@import './components/common/breadcrumbs.scss';
+@import './components/customer.scss';
+@import './components/step.scss';
+
+@import './components/footer.scss';
 
 body {
-  color: red;
+  
 }

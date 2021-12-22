@@ -1,0 +1,574 @@
+@import "../rootStyles/variables.scss";
+
+.customer {
+    padding-top: 2.3125rem;
+    background-color: #fff;
+    &__breadcrumbs {
+        margin-left: 10.3125rem;
+    }
+
+    &__head-screen {
+        background-color: #fff;
+        padding-bottom: 87px;
+    }
+    
+    &__header {
+        margin-left: 10.125rem;
+        margin-top: 2.3125rem;
+        color: $text-color;
+        text-transform: uppercase;
+        font-family: "Room";
+    }
+
+    &__data-screen {
+        background-color: #F5FBFE;
+        padding-top: 44px;
+        padding-bottom: 53px;
+    }
+
+    &__menu {
+        background-color: #F5FBFE;
+        display: flex; 
+        justify-content: flex-start;
+        margin-left: 10.1875rem;
+    }
+
+    &__link {
+        display: block;
+        
+        color: $text-color;
+        text-decoration: none;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        margin-right: 7.375rem;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            color: $menu-hover;
+        }
+
+        &:hover .customer__link--image path {
+            fill: $menu-hover;
+        }
+    } 
+
+    &__link--text {
+        display: block;
+        margin-left: 1.4375rem;
+    }
+
+    &__link--image path {
+        fill: #002C3E;
+    }   
+
+    &__data {
+        width: 110rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        // margin-top: 3.3125rem;
+        margin-bottom: 3.3125rem;
+    }
+
+} 
+
+.step {
+    border-radius: 30px;
+    width: 26.0625rem;
+    background-color: $bg-step-color;
+    padding-bottom: 4.5625rem;
+    margin-top: 3.4375rem;
+    &__back-link {
+        display: block;
+        margin-top: 82px;
+        margin-left: 124px;
+        padding-bottom: 2px;
+        position: relative;
+        font-family: "Montserrat";
+        font-weight: normal;    //???
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        text-decoration-line: underline;
+        color: #488BA7;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 26px;
+            height: 16px;
+            top: 4px;
+            left: -43px;
+            background-image: url('./../img/icon_arrow.svg');
+        }
+    }
+
+    &__title {
+        position: relative;
+        margin-left: 190px;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 74px;
+            height: 74px;
+            background-color: #00AAE7;
+            border-radius: 50%;
+            left: -100px;
+            bottom: 14px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url('./../img/icon_list.svg');
+            width: 24px;
+            height: 24px;
+            left: -75px;
+            bottom: 38px; 
+        }
+    }
+
+    &__number {
+        position: relative;
+        font-family: "Room";
+ 
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: -0.05em;
+        /* identical to box height, or 48px */
+
+        text-transform: uppercase;
+        width: 100%;
+        color: $text-color;
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 6.75rem;
+            background-color: $menu-hover;
+            transform: rotate(-0.38deg);
+        }
+    }
+
+    &__info {
+        font-family: "Circe";
+        font-weight: 350;
+        font-size: 13px;
+        line-height: 120%;
+        color: $text-color;
+        margin-top: 15px;
+        letter-spacing: 0.02em;
+    }
+
+    &__description {
+        margin-top: 76px;
+        padding: 0 90px;
+    }
+
+    &__description--text {
+        letter-spacing: 0.02em;
+        font-family: "Circe";
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120%;
+        color: $text-color;
+        text-align: center;
+    }
+
+    &__progressbar {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 95px;
+        width: 182px;
+        height: 12px;
+        background-color: #DAE7EF;
+        border-radius: 10px;
+        &--handle {
+            position: absolute;
+            width: 51px;
+            height: 12px;
+            background-color: #A6BAC6;
+            border-radius: 10px;
+            left: 0;
+            top: 0;
+        }
+    }
+    
+    &__step-count {
+        display: block;
+        color: $text-color;
+        text-align: center;
+        margin-top: 33px;
+        font-family: "Montserrat";
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+
+        letter-spacing: 0.02em;
+    }
+
+
+}
+
+ .personal {
+        width: 82.0625rem;
+        padding-left: 4.625rem;
+        &__caption {
+            font-family: "Circe";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2.4375rem;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            color: $text-color;
+        }
+    
+        &__form {
+            display: flex;
+        }  
+    
+        &__row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.6875rem;
+        }
+    
+        &__wrapper {
+            margin-top: 7.6875rem;
+            width: 28.125rem;
+            margin-right: 3.0625rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            &:last-child {
+                background-color: #fff;
+                padding: 0 2.25rem;
+                margin-right: 0;
+                margin-top: 1.8125rem;
+                border-radius: 30px;
+                padding-bottom: 48px;
+            }
+        }
+    
+        &__phone {
+            margin-top: 37px;
+        }
+    
+        &__email {
+            margin-top: 30px;
+        }
+    
+        &__input-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__fio  {
+            margin-top: 70px;
+        }
+    
+        &__birthdate {
+            width: 10.8125rem;
+        }
+    
+        &__passport {
+            width: 15.0625rem;
+        }
+    
+        &__label {
+            font-family: "Circe";
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 1.46;
+            color: #A1C4DA;
+            padding-left: 0.625rem;
+        }
+    
+        &__input {
+            background: #E9F3F9;
+            height: 66px;
+            border-radius: 10px;
+            padding: 5px 20px;
+            font-size: 20px;
+            color: $text-color;
+        }
+    
+        &__citizenship {
+            margin-top: 1.75rem;
+            width: 100%;
+            position: relative;
+            font-family: "Circe";
+            font-size: 16px;
+            line-height: 1.5;
+            color: $menu-hover;
+            padding-left: 72px;
+            
+            &::before {
+                position: absolute;
+                content: "";
+                width: 46px;
+                height: 18px;
+                background: #E9F3F9;
+                border-radius: 8px;
+                top: 2px;
+                left: 10px;
+            }
+        }
+    
+        &__citizenship__label {
+            color:  #A1C4DA;
+            cursor: pointer;
+        }
+        
+        &__citizenship--indicator {
+        
+            position: relative;
+            cursor: pointer;
+            &::after {
+                content: "";
+                z-index: 0;
+                position: absolute;
+                top: 2px;
+                left: -65px;
+                width: 12px;
+                border-radius: 50%;
+                height: 12px;
+                background-color: #00AAE7;
+                border: 4px solid #fff;
+                box-shadow: 0px -1px 11px rgba(161, 196, 218, 0.57);
+            }
+        }
+    
+        &__citizenship--checkbox:checked ~ .personal__citizenship--indicator::after {
+            left: -40px;
+        }
+    
+      
+        &__citizenship--checkbox:checked ~ .personal__citizenship--indicator {
+            color:  #00AAE7;
+        }
+    
+        &__select-wrapper {
+            position: relative;
+    
+            &::after {
+                content: "";
+                width: 10px;
+                height: 2px;
+                background-color: #A1C4DA;
+                transform: rotate(45deg);
+                position: absolute;
+                right: 16px;
+                font-size: 30px;
+                top: 55px;
+            }
+            &::before {
+                z-index: 1;
+                content: "";
+                width: 10px;
+                height: 2px;
+                background-color: #A1C4DA;
+                transform: rotate(-45deg);
+                position: absolute;
+                right: 10px;
+                font-size: 30px;
+                top: 55px;
+            }
+
+            &--owners {
+               
+                &::after {
+                    right: 16px;
+                    top: 35px;
+                }
+                &::before {
+                    right: 10px;
+                    top: 35px;
+                }
+            }
+        }
+    
+        &__select {
+            position: relative;
+            background-color: #E9F3F9;
+            height: 66px;
+            padding: 0 10px;
+            width: 100%;
+            font-size: 14px;
+            line-height: 143%;
+            appearance: none;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+    
+            & option {
+                padding: 10px 10px;
+            }
+        }
+    
+        &__owners {
+            margin-top: 11.75rem;
+            color: $text-color;
+            font-family: "Circe";
+    
+            font-weight: normal;
+            font-size: 1.25rem;
+            line-height: 150%;
+    
+            letter-spacing: 0.02em;
+            margin-bottom: 1.25rem;
+        }
+    
+    
+        &__payment {
+            position: relative;
+            margin-top: 1.875rem;
+            &--caption {
+            display: block;
+            font-family: "Circe";
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            color: $text-color;
+            margin-bottom: 1.5rem;
+    
+        }
+    
+        &--text {
+            position: relative;
+            font-family: "Circe";
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 1.5;
+    
+            color: #A1C4DA;
+    
+            &::after {
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 20px;
+                left: 0;
+                top: 0;
+                background: #FFFFFF;
+                border-radius: 50%;
+                box-shadow: 0px -1px 11px rgba(161, 196, 218, 0.57);
+            }
+        }
+    
+    }
+    
+        &__payment-wrapper {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        &__payment-label {
+    
+            position: relative;
+            text-align: center;
+            width: 50%;
+            font-family: "Circe";
+            font-weight: normal;
+            font-size: 1rem;
+            line-height: 1.5;
+            padding: 1.3125rem 1.3125rem 1.3125rem 3.875rem;
+            cursor: pointer;
+        
+            color: #A1C4DA;
+        }
+    
+        &__payment--radio:checked + .personal__payment-label::after{
+            background-color: #fff;
+        }
+    
+        &__payment-text {
+            display: block;
+            position: relative;
+            
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: -40px;
+                width: 20px;
+                height: 20px;
+                background-color: #fff;
+                border-radius: 50%;
+                box-shadow: 0px -1px 11px rgba(161, 196, 218, 0.57);
+            }
+        
+            
+        }
+    
+        &__payment-wrapper input[type="radio"]:checked + .personal__payment-text::after {
+        
+            position: absolute;
+            content: '';
+            left: -36px;
+            z-index: 1;
+            top: 4.5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $menu-hover;
+        
+        }
+    
+        &__button {
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+            width: 17.5625rem;
+
+            @media (max-width: 1536px) {
+                margin-top: 5.5rem;   
+            }
+
+            @media (max-width: 1440px) {
+                margin-top: 7.2rem;
+            }
+
+            @media (max-width: 1366px) {
+                margin-top: 8.4rem;
+                
+            }
+        
+            border: none;
+            color: #fff;
+            background-color: $button-color;
+            border-radius: 1.25rem;
+            padding: 1.4375rem 1.4375rem;
+            font-size: 1rem;
+            line-height: 130%;
+            font-family: "Montserrat";
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            &:hover {
+                background-color: $button-color-hover;
+            }
+            
+            
+        }
+    
+    }
+    
+    
+    
+     
+    
+    
+

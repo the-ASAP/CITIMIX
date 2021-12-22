@@ -1,0 +1,141 @@
+.footer {
+    background-color: #002C3E;
+    padding-top: 3.6875rem;
+    padding-bottom: 1.5625rem;
+
+    &__wrapper {
+        width: 91.25rem;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        @media (max-width: 1440px) {
+            width: 93rem;
+            
+        }
+       
+    }
+
+    &__logo-and-social {
+        min-height: 186px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__social {
+        margin-right: 12px;
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__about {
+        margin-left: 10.875rem;
+        width: 122px;
+        flex: 0 0 auto;
+    }
+
+    &__caption {
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 1.474;
+        font-family: "Circe";
+        font-weight: 700;
+    }
+
+    &__caption  a{
+        color: #FFFFFF;
+        font-size: 20px;
+        line-height: 1.474;
+        font-family: "Circe";
+        font-weight: 700;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__link {
+        display: block;
+        color: #A1C4DA;
+        font-family: "Circe";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.375;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+
+
+    &__logo-image {
+        width: 7.7731rem;
+        height: 2.795rem;
+    }
+
+    &__options--group {
+        margin-top: 15px;
+    }
+
+ 
+    &__conditions {
+        margin-left: 6.875rem;
+    }
+
+
+    &__options {
+        margin-left: 6.875rem;
+        min-width: 12.75rem;
+        flex-shrink: 0;
+    }
+
+    &__contacts {
+        width: 20.3125rem;
+        margin-left: 6.875rem;
+
+        &--text {
+            margin-top: 12px;
+            margin-bottom: 12px;
+            font-family: "Circe";
+            line-height: 1.25;
+            color: #fff;
+
+            
+        }
+    }
+
+    &__button {
+        margin-left: auto;
+        margin-top: 20px;
+        margin-right: 0.625rem;
+        border: none;
+        color: #fff;
+        background-color: $button-phone-color;
+        border-radius: 1.25rem;
+        padding: 1.4375rem 2.8125rem;
+        font-size: 1rem;
+        line-height: 130%;
+        font-family: "Montserrat";
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        &:hover {
+            background-color: $button-phone-color-hover;
+        }
+    
+    }
+
+    &__copyright {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 14px;
+        line-height: 1.142;
+        margin-top: 2.875rem;
+        &:last-child {
+            margin-top: 0;
+        }
+    }
+    
+}
